@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+body {
+    font-family: 'OpenSans', sans-serif;
+}
+
+header {
+    width: 100%;
+    background-color: #000;
+    display: flex; /*For menu*/
+}
+
+.header_logo {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    font-size: 24px;
+    cursor: pointer;
+    margin-top: 56px;
+    margin-left: 180px;
+}
+
+nav {
+    margin-top: 59px;
+    margin-left: 20%;
+}
+
+.topnav a {
+    color: #fff;
+    text-align: center;
+    padding: 12px 16px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.topnav a:hover {
+    position: relative;
+   border-bottom: 3px solid #fcac45; 
+   z-index: 3;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column; /*Направление флексов*/
+    width: 100%;
+}
+
+main .main_welcome {
+    background: #000;
+    text-align: center;
+    padding: 200px 0 410px 0;
+}
+
+main .main_welcome p{
+    color: #999999;
+    font-size: 20px;
+}
+
+main .main_welcome h1{
+    font-family: 'OpenSans', sans-serif;
+    color: #999999;
+    font-size: 44px;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+.mycompany {
+    color: #fcac45; 
+    font-weight: 700;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+    nav {
+        margin-left: 10%;
+    }
+}
+
+@media screen and (max-width: 406px) {
+    .header_logo {
+        margin-left: 80px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    nav {
+        margin-left: 5%;
+    }
+}
+
+
+
+@media screen and (max-width: 1050px) {
+    .topnav a {
+        display: none;
+    }
+    .topnav a.icon{
+        float: right;
+        margin-top: -17px;
+        display: block;
+        color: #fff;
+        font-size: 25px;
+    }
+    nav {
+        width: 100%;
+    }
+    .topnav.responsive {
+        position: relative;
+        top: 50px;
+        left: -200px;
+    }
+    header .topnav.responsive {
+        height: 340px;
+    }
+     .topnav.responsive a.icon {
+        position: absolute;
+        top: -50px;
+        right: -200px;
+    }
+    .topnav.responsive a{
+        float: none;
+        display: block;
+        text-align: center;
+    }
+}
